@@ -34,9 +34,9 @@ public class LoginActivityTest {
                 withId(R.id.email))
         .perform(scrollTo(), click());
 
-        ViewInteraction appCompatAutoCompleteTextView3 = onView(
-                withId(R.id.email));
-        appCompatAutoCompleteTextView3.perform(scrollTo(), replaceText("qwerty"), closeSoftKeyboard());
+        onView(
+                withId(R.id.email))
+        .perform(scrollTo(), replaceText("qwerty"), closeSoftKeyboard());
 
     }
 
