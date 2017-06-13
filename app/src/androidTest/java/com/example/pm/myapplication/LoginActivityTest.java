@@ -26,9 +26,9 @@ public class LoginActivityTest {
 
     @Test
     public void loginActivityTest() {
-        ViewInteraction appCompatAutoCompleteTextView = onView(
-                withId(R.id.email));
-        appCompatAutoCompleteTextView.perform(scrollTo(), click());
+        onView(
+                withId(R.id.email))
+        .perform(scrollTo(), click());
 
         ViewInteraction appCompatAutoCompleteTextView2 = onView(
                 withId(R.id.email));
