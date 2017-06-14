@@ -29,10 +29,6 @@ public class LoginActivityTest {
 
         onView(
                 withId(R.id.email))
-        .perform(scrollTo(), click());
-
-        onView(
-                withId(R.id.email))
         .perform(scrollTo(), replaceText("qwerty"), closeSoftKeyboard());
 
     }
